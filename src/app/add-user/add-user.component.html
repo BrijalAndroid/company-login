@@ -1,0 +1,23 @@
+<form #userLogin="ngForm" (ngSubmit)="Login(userLogin.value)">
+    <div class="imgcontainer">
+      <img src="/assets/Image/user.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" ngModel name="name" placeholder="Enter Username" name="UserName" >
+        
+      <label for="psw"><b>Password</b></label>
+      <input type="password" ngModel name="UserPass" placeholder="Enter Password" name="UserPass" >
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember Me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">Password?</a></span>
+    </div>
+  </form>
